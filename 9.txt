@@ -1,0 +1,14 @@
+dir | foreach {Measure-Command {dir}} | Measure-Object TotalMilliseconds -Max -Min -Average
+Count    : 27
+Average  : 1,35601111111111
+Sum      :
+Maximum  : 2,1567
+Minimum  : 1,2849
+Property : TotalMilliseconds
+ps | foreach {Measure-Command {ps}} | Measure-Object TotalMilliseconds -Max -Min -Average
+Count    : 169
+Average  : 1,92425029585799
+Sum      :
+Maximum  : 12,7418
+Minimum  : 1,4647
+Property : TotalMilliseconds
