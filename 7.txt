@@ -1,1 +1,1 @@
-Get-Childitem C:\*.jpg -recurse | Measure-Object Length -sum
+Get-ChildItem -Path C:\Windows *.jpg | Measure-Object Length -Sum
